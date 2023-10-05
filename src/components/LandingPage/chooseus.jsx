@@ -3,29 +3,29 @@ import GlowingCircle from '../../assets/ChooseUs Circle.png';
 import HeadingLine from '../../assets/HeadingLine.png';
 import LanguageIcon from '../../assets/chooseUsLanguageIcon.png'
 import EyeIcon from '../../assets/chooseUsEye.png'
-import ChooseUsComponent from "../../shared/chooseUsComponent";
+import ChooseUsComponent from "../../shared/ChooseUsComponent";
 
-function Chooseus() {
-    const chooseusData = [
-        {
-            icon: LanguageIcon,
-            headingOne: 'Simplified',
-            headingTwo: 'Language',
-            detail: 'No More Confusing Terms - We Explain Health Insurance in Plain English.'
-        },
-        {
-            icon: EyeIcon,
-            headingOne: 'User-Friendly',
-            headingTwo: 'Interface',
-            detail: 'Easy-to-Use Tools for Comparing Plans and Understanding Benefits.'
-        },
-        {
-            icon: LanguageIcon,
-            headingOne: 'Empowering You',
-            headingTwo: '',
-            detail: 'No More Confusing Terms - We Explain Health Insurance in Plain English.'
-        },
-    ];
+const chooseusData = [
+    {
+        icon: LanguageIcon,
+        headingOne: 'Simplified',
+        headingTwo: 'Language',
+        detail: 'No More Confusing Terms - We Explain Health Insurance in Plain English.'
+    },
+    {
+        icon: EyeIcon,
+        headingOne: 'User-Friendly',
+        headingTwo: 'Interface',
+        detail: 'Easy-to-Use Tools for Comparing Plans and Understanding Benefits.'
+    },
+    {
+        icon: LanguageIcon,
+        headingOne: 'Empowering You',
+        headingTwo: '',
+        detail: 'No More Confusing Terms - We Explain Health Insurance in Plain English.'
+    },
+];
+function ChooseUs() {
     return (
         <section className='w-full relative mb-14'>
             {/* Circle */}
@@ -64,4 +64,4 @@ function Chooseus() {
     );
 }
 
-export default Chooseus;
+export default ChooseUs;

@@ -1,9 +1,9 @@
 import React from 'react';
 import StartBG from '../../assets/HeaderStar.png';
 import HeadingLine from '../../assets/HeadingLine.png';
-import UnderstandBenefitComponent from "./understandBenefitComponent";
-import InformedChoice from "./informedChoice";
-import ComparePlans from "./comparePlans";
+import UnderstandBenefitComponent from "./UnderstandBenefitComponent";
+import InformedChoice from "./InformedChoice";
+import ComparePlans from "./ComparePlans";
 
 function HowItWorkComponent() {
     return (

@@ -1,21 +1,33 @@
 import React from 'react';
 import FeatureBG from '../../assets/FeatureBG.png';
-import PlanCamparsionIcon from '../../assets/PlanCamparisonToolIcon.png';
-import JargonFreeIcon from '../../assets/JaragonFreeIcon.png'
+import PlanCamparsionIcon from '../../assets/plan-icon.svg';
+import JargonFreeIcon from '../../assets/jargon-icon.svg'
+import MobileRespIcon from "../../assets/mobile-resp-icon.svg"
+import ChatIcon from "../../assets/chat-icon.svg"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import FeatureDetailComponent from "../../shared/featureDetailComponent";
+import '../../styles/CustomSlider.css'
+import FeatureDetailComponent from "../../shared/FeatureDetailComponent";
 function FeatureComponent() {
     const featuresData = [
         {
             icon: PlanCamparsionIcon,
             title: 'Plan Comparison Tool',
-            detail: 'Easily compare insurance plans side by side to see what\'s covered and what\'s not.'
+            detail: "Easily compare insurance plans side by side to see what's covered and what's not."
         },
         {
             icon: JargonFreeIcon,
             title: 'Jargon-Free Explanations',
             detail: 'We break down insurance terms and jargon so you can understand your coverage.'
+        },
+        {
+            icon: MobileRespIcon,
+            title: 'Interactive Tools',
+            detail: 'Use sliders, filters, and interactive guides to explore your options.'
+        },
+        {
+            icon: ChatIcon,
+            title: 'Mobile-Friendly',
+            detail: 'Access our platform anytime, anywhere.'
         },
     ];
     return (
@@ -23,7 +35,7 @@ function FeatureComponent() {
             {/*<div className='w-full h-full relative -z-50'>*/}
                 <img src={FeatureBG} alt="FeatureBG" className='absolute w-full h-full object-cover -z-40'/>
             {/*</div>*/}
-            <div className='z-50 p-5 sm:p-10 h-full w-full'>
+            <div className='z-50 p-5 sm:p-10 pr-0 h-full w-full' style={{ paddingRight: 0 }}>
                 <div className='w-full h-full flex sm:flex-row flex-col font-bold text-2xl'>
                         <div className='w-full sm:w-[40%] h-full flex justify-center px-0 py-5 sm:p-10'>
                             <div className='sm:w-[350px] flex flex-col gap-y-5 w-full justify-center'>
@@ -38,17 +50,17 @@ function FeatureComponent() {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full sm:w-[60%] h-full sm:flex flex-col sm:flex-row justify-center  md:p-5 lg:p-7 xl:p-10 items-center   hidden '>
+                        <div className='w-full sm:w-[60%] h-full sm:flex flex-col sm:flex-row justify-center  md:p-5 lg:p-7 xl:p-10 items-center   hidden ' style={{ paddingRight: '0' }}>
                             <Swiper
                                 spaceBetween={40}
                                 slidesPerView={2}
                                 onSlideChange={() => console.log('slide change')}
                                 onSwiper={(swiper) => console.log(swiper)}
-                                className='w-full h-full sm:flex justify-between items-center hidden'
+                                className='w-full h-auto sm:flex justify-between items-center hidden'
                             >
                                 {
                                     featuresData.map((current, index) => (
-                                        <SwiperSlide className='w-full h-full sm:w-[330px] sm:h-[350px]'>
+                                        <SwiperSlide id="customSwiperStyle"  className='w-[320px] h-full sm:w-[330px] sm:h-[350px]' >
                                             <FeatureDetailComponent icon={current.icon} title={current.title} detail={current.detail}/>
                                         </SwiperSlide>
                                     ))
