@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
+import React from "react";
 import leaf from "../../assets/leaf.svg";
 import "../../styles/MainTable.css";
 import Tooltip from "@mui/material/Tooltip";
@@ -18,19 +19,32 @@ const MainTable = ({ data }) => {
           <h2 className="mt-card-heading">
             <img src={leaf} alt="Icon" className="mt-heading-icon" />
             {item.firstHeading.includes("in network provider") ? (
-              <Tooltip
-                title="Healthcare providers with agreements 
-                           with your insurance company,
-                           often resulting in
-                           lower out-of-pocket costs."
-                classes={{ tooltip: "white-tooltip" }}
-                arrow
-                interactive
-                placement="top"
-                enterTouchDelay={0}
-              >
-                <span className="no-outline">{item.firstHeading}</span>
-              </Tooltip>
+              <>
+                {item.firstHeading
+                  .split("in network provider")
+                  .map((part, index) => (
+                    <React.Fragment key={index}>
+                      {index > 0 ? (
+                        <Tooltip
+                          title="Healthcare providers with agreements 
+                                 with your insurance company,
+                                 often resulting in
+                                 lower out-of-pocket costs."
+                          classes={{ tooltip: "white-tooltip" }}
+                          arrow
+                          interactive
+                          placement="top"
+                          enterTouchDelay={0}
+                        >
+                          <span className="tooltip-target">
+                            in network provider
+                          </span>
+                        </Tooltip>
+                      ) : null}
+                      {part}
+                    </React.Fragment>
+                  ))}
+              </>
             ) : (
               item.firstHeading
             )}
@@ -49,7 +63,7 @@ const MainTable = ({ data }) => {
                     placement="top"
                     enterTouchDelay={0}
                   >
-                    <span className="no-outline">{para}</span>
+                    <span className="tooltip-target">{para}</span>
                   </Tooltip>
                 </p>
               ) : (
@@ -60,19 +74,32 @@ const MainTable = ({ data }) => {
           <h2 className="mt-card-heading">
             <img src={leaf} alt="Icon" className="mt-heading-icon" />
             {item.secondHeading.includes("out of network provider") ? (
-              <Tooltip
-                title="Healthcare providers without agreements
-                           with your insurance, potentially
-                           leading to
-                           higher out-of-pocket costs."
-                classes={{ tooltip: "white-tooltip" }}
-                arrow
-                interactive
-                placement="top"
-                enterTouchDelay={0}
-              >
-                <span className="no-outline">{item.secondHeading}</span>
-              </Tooltip>
+              <>
+                {item.secondHeading
+                  .split("out of network provider")
+                  .map((part, index) => (
+                    <React.Fragment key={index}>
+                      {index > 0 ? (
+                        <Tooltip
+                          title="Healthcare providers without agreements
+                       with your insurance, potentially
+                       leading to
+                       higher out-of-pocket costs."
+                          classes={{ tooltip: "white-tooltip" }}
+                          arrow
+                          interactive
+                          placement="bottom"
+                          enterTouchDelay={0}
+                        >
+                          <span className="tooltip-target">
+                            out of network provider
+                          </span>
+                        </Tooltip>
+                      ) : null}
+                      {part}
+                    </React.Fragment>
+                  ))}
+              </>
             ) : (
               item.secondHeading
             )}
