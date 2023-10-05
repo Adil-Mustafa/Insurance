@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Card,
   CardContent,
@@ -8,7 +7,6 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import Tooltip from "@mui/material/Tooltip";
-import MessageBox from "./MessageBox";
 import "../../styles/MainHead.css";
 
 const MainHead = () => {
@@ -49,15 +47,8 @@ const MainHead = () => {
               <h2 className="card-heading_2">
                 Annual
                 <Tooltip
-                  title={
-                    <MessageBox
-                      content="The amount you must 
-                pay for healthcare services 
-                before your insurance 
-                starts covering costs."
-                    />
-                  }
-                  className="custom-tooltip"
+                  title="The amount you must pay for healthcare services before your insurance starts covering costs."
+                  classes={{ tooltip: "white-tooltip" }}
                   arrow
                   interactive
                   placement="top"
@@ -78,16 +69,8 @@ const MainHead = () => {
                   <h4 className="card-type-title">Plan Type</h4>
 
                   <Tooltip
-                    title={
-                      <MessageBox
-                        content="Plans that 
-                        require a primary care doctor 
-                        and referrals for specialists, 
-                        often with 
-                        lower out-of-pocket costs."
-                      />
-                    }
-                    className="custom-tooltip"
+                    title="Plans that require a primary care doctor and referrals for specialists, often with lower out-of-pocket costs."
+                    classes={{ tooltip: "white-tooltip" }}
                     arrow
                     interactive
                     placement="bottom"
