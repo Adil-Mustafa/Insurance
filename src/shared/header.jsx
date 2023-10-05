@@ -54,8 +54,8 @@ function Header() {
             </div>
           </div>
           <div className="">
-            <button className="hidden sm:block rounded-[8px] bg-[#47A5DC] py-3 px-7 font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl">
-              Explore Plans
+            <button className="hidden sm:block rounded-[8px] bg-[#47A5DC] py-4 px-7 font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl">
+              Compare Plan
             </button>
             <img
               src={MenuIcon}
@@ -67,20 +67,25 @@ function Header() {
         </div>
         {menuOpen && (
           <div className="absolute left-0 w-full bg-[#ffffff] shadow-lg z-10">
-            <ul className="gap-x-10 text-[#06283D] text-[12px] font-Jakarta">
-              <li className="px-5 py-3 cursor-pointer hover:text-[#052031] ">
+            <ul className="flex flex-col justify-center items-center gap-x-10 text-[#06283D] text-[12px] font-Jakarta">
+              <li className="px-6 py-3 cursor-pointer hover:text-[#052031] ">
                 Our Plans
               </li>
-              <li className="px-5 py-3 cursor-pointer hover:text-[#052031] ">
+              <li className="px-6 py-3 cursor-pointer hover:text-[#052031] ">
                 About us
               </li>
-              <li className="px-5 py-3 cursor-pointer hover:text-[#052031] ">
+              <li className="px-6 py-3 cursor-pointer hover:text-[#052031] ">
                 Contact us
               </li>
-            </ul>
-            <button className="block text-[12px] rounded-[8px] bg-[#47A5DC] py-2 px-4 mb-2 ml-2 font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl text-center">
-              Explore More
+               <li className="px-6 py-3 cursor-pointer hover:text-[#052031] ">
+                <button className="block text-[12px] rounded-[8px] bg-[#47A5DC] py-2 px-4 mb-2 font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl text-center">
+              Compare Plan
             </button>
+              </li>
+            </ul>
+            {/* <button className="block text-[12px] rounded-[8px] bg-[#47A5DC] py-2 px-4 mb-2 ml-2 font-Jakarta text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl text-center">
+              Explore More
+            </button> */}
           </div>
         )}
       </header>
