@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+
+
+.MuiTooltip-popper .MuiTooltip-tooltip {
+  background-color: white;  
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  font-family: 'Outfit', sans-serif; 
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.MuiTooltip-popper .MuiTooltip-arrow {
+  color: white; 
+}
+.MuiTooltip-popper[data-popper-placement*="bottom"] .MuiTooltip-tooltipArrow {
+  bottom: 0;
+  left: 0;
+  margin-bottom: -0.71em;
+}
+.MuiTooltip-popper .MuiTouchRipple-root {
+  display: none; 
+}
+.main-container {
+  padding: 20px;
+  font-family: 'outfit';
+  /* max-width: 1600px; */
+  margin: 0 45px;
+}
+
+.custom-tooltip .MuiTooltip-tooltip {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: white !important;
+}
+
+.insurance-title {
+  font-size: 64px;
+  color: #06283D;
+  font-family: 'outfit';
+  margin-bottom: 20px;
+}
+
+.custom-search-bar {
+  width: 998px;
+  height: 48px;
+  margin: 20px 0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  align-items: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  width: 475px;
+  height: 400px;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.166);
+  font-family: 'outfit';
+  box-shadow: none !important;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card-3 {
+  border-right: none;
+}
+
+.card-heading {
+  font-size: 18px;
+  color: #06283D99;
+  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.card-heading_1 {
+  font-size: 18px;
+  color: #06283D99;
+  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding-bottom: 20px;
+}
+
+.card-heading_2 {
+  font-size: 24px;
+  color: #142752AB;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.card-dollar-value {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #47A5DC;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+
+}
+
+.card-subtitle-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-plan-title,
+.card-type-title,
+.card-other-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #142752AB;
+  margin: 10px 0;
+}
+
+.card-other-title {
+  margin-bottom: 0px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #142752AB;
+
+}
+
+.card-plan-text,
+.card-type-text,
+.card-other-text {
+  font-size: 40px;
+  color: #47A5DC;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.tooltip-target:hover {
+  text-decoration: underline dotted;
+}
+
+.custom-tooltip::before {
+  border-top-color: white;
+}
+
+.custom-tooltip[role="tooltip"]::before {
+  border-color: transparent;
+  background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .custom-search-bar {
+    width: 100%;
+  }
+  .card-subtitle-plan{
+    flex-direction: column;
+    gap:0px;
+ 
+  }
+}
+ 
+@media screen and (max-width: 650px) {
+
+  .insurance-title{
+    font-size: 38px;
+  line-height: 40px;
+
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 90%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    border-right: none;
+    height: 350px;
+  }
+
+
+.card-heading_1 {
+  font-size: 17px;
+}
+
+.card-heading_2 {
+  font-size: 20px;
+}
+
+  .card-3 {
+    border-bottom: none;
+  }
+
+  .card-heading{
+    font-size: 17px;
+  }
+
+  .card-dollar-value {
+    font-size: 25px;
+  }
+
+  .card-plan-title,
+  .card-type-title,
+  .card-other-title {
+    font-size: 19px;
+  }
+
+  .card-plan-text,
+  .card-type-text,
+  .card-other-text {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+body {
+  overflow-x: hidden;
+}
+
+.mt-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 30px;
+  /* width: 100%; */
+  /* max-width: 1600px; */
+  margin: 0 45px;
+}
+
+.mt-coverage-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 71px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #06283D;
+}
+
+.mt-heading-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.mt-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 40px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.mt-card-odd {
+  background-color: #DCEEF9;
+}
+
+.mt-card-even {
+  background-color: #fff;
+}
+
+.mt-card-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mt-card-paragraph-section,
+.mt-card-paragraph-section_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.mt-card-paragraph {
+  margin: 15px 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  min-width: 230px;
+
+}
+
+@media (max-width: 990px) {
+  .mt-coverage-heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .mt-card-heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .mt-card-paragraph {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    min-width: 100px;
+  }
+
+  .mt-main-container {
+    padding: 15px;
+  }
+
+  .mt-card-container {
+    padding: 10px 20px;
+  }
+
+  .mt-card-paragraph-section,
+  .mt-card-paragraph-section_1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mt-card-paragraph {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .mt-main-container {
+    max-width: 100%;
+  }
+}

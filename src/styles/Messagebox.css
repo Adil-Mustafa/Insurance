@@ -1,0 +1,20 @@
+  .message-box {
+    padding: 10px;
+    background-color: white;
+  }
+
+  .message-box-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .message-box-content {
+    font-size: 14px;
+    color: black;
+    
+  }
+
+  .custom-tooltip[role="tooltip"]::before {
+    border-color: transparent;
+    background-color: white;
+  }

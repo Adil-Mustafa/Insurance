@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  display: inline;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: 100%;
+  left:50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  white-space: nowrap;
+  max-width: 300px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align:start;
+  white-space:pre-line;
+  padding: 8px 12px;
+}
+
+.tooltip-container:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-content::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
+
+@media screen and (max-width: 768px) {
+  .tooltip-content {
+    font-size: 14px;
+  }
+}
