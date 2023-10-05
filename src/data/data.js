@@ -29,7 +29,7 @@ const sampleData = [
     firstHeading:
       "Preventive care/screening/immunization (in-network provider)",
     secondHeading:
-      "Preventive care/screening/immunization(out of network provider)",
+      "Preventive care/screening/immunization(out-of-network provider)",
     paragraphs: [
       "$60/visit",
       "$60/visit",
@@ -54,7 +54,7 @@ const sampleData = [
   },
   {
     firstHeading: "Imaging (CT/PET scans, MRIs) (in-network provider)",
-    secondHeading: "Imaging (CT/PET scans, MRIs) (out of network provider)",
+    secondHeading: "Imaging (CT/PET scans, MRIs) (out-of-network provider)",
     paragraphs: [
       "$60/visit",
       "$60/visit",
@@ -78,7 +78,7 @@ const sampleData = [
   },
   {
     firstHeading: "Preferred brand drugs - Tier 2 (in-network provider)",
-    secondHeading: "Preferred brand drugs - Tier 2 (out of network provider)",
+    secondHeading: "Preferred brand drugs - Tier 2 (out-of-network provider)",
     paragraphs: [
       "$60/visit",
       "$60/visit",
@@ -103,7 +103,7 @@ const sampleData = [
   },
   {
     firstHeading: "Specialty drugs  - Tier 4 (in-network provider)",
-    secondHeading: "Specialty drugs  - Tier 4  (out of network provider)",
+    secondHeading: "Specialty drugs  - Tier 4  (out-of-network provider)",
     paragraphs: [
       "$60/visit",
       "$60/visit",
@@ -129,7 +129,7 @@ const sampleData = [
     firstHeading:
       "Facility fee (e.g., ambulatory surgery center) (in-network provider)",
     secondHeading:
-      "Facility fee (e.g., ambulatory surgery center)  (out of network provider)",
+      "Facility fee (e.g., ambulatory surgery center)  (out-of-network provider)",
     paragraphs: [
       "$60/visit",
       "$60/visit",
@@ -153,7 +153,7 @@ const sampleData = [
   },
   {
     firstHeading: "Emergency room care  (in-network provider)",
-    secondHeading: "Emergency room care  (out of network provider)",
+    secondHeading: "Emergency room care  (out-of-network provider)",
     paragraphs: [
       "$60/visit",
       "$60/visit",
@@ -166,7 +166,7 @@ const sampleData = [
   {
     firstHeading: "Emergency medical transportation (in-network provider)",
     secondHeading:
-      "Emergency medical transportation  (out of network provider)",
+      "Emergency medical transportation  (out-of-network provider)",
     paragraphs: [
       "$95/visit",
       "$60/visit",
@@ -191,7 +191,7 @@ const sampleData = [
   {
     firstHeading: "Facility fee (e.g., hospital room)  (in-network provider)",
     secondHeading:
-      "Facility fee (e.g., hospital room)  (out of network provider)",
+      "Facility fee (e.g., hospital room)  (out-of-network provider)",
     paragraphs: [
       "$95/visit",
       "$60/visit",
@@ -215,7 +215,7 @@ const sampleData = [
   },
   {
     firstHeading: "Outpatient services (in-network provider)",
-    secondHeading: "Outpatient services (out of network provider)",
+    secondHeading: "Outpatient services (out-of-network provider)",
     paragraphs: [
       "$95/visit",
       "$60/visit",
@@ -239,7 +239,7 @@ const sampleData = [
   },
   {
     firstHeading: "Office visits  (in-network provider)",
-    secondHeading: "Office visits (out of network provider)",
+    secondHeading: "Office visits (out-of-network provider)",
     paragraphs: [
       "$95/visit",
       "$60/visit",
@@ -266,7 +266,7 @@ const sampleData = [
   {
     firstHeading: "Childbirth/delivery facility services (in-network provider)",
     secondHeading:
-      "Childbirth/delivery facility services (out of network provider)",
+      "Childbirth/delivery facility services (out-of-network provider)",
     paragraphs: [
       "$95/visit",
       "$60/visit",
@@ -290,7 +290,7 @@ const sampleData = [
   },
   {
     firstHeading: "Rehabilitation services (in-network provider)",
-    secondHeading: "Rehabilitation services (out of network provider)",
+    secondHeading: "Rehabilitation services (out-of-network provider)",
     paragraphs: [
       "$95/visit",
       "$60/visit",
@@ -314,7 +314,7 @@ const sampleData = [
   },
   {
     firstHeading: "Skilled nursing care (in-network provider)",
-    secondHeading: "Skilled nursing care (out of network provider)",
+    secondHeading: "Skilled nursing care (out-of-network provider)",
     paragraphs: [
       "$95/visit",
       "$60/visit",
@@ -338,7 +338,7 @@ const sampleData = [
   },
   {
     firstHeading: "Hospice services (in-network provider)",
-    secondHeading: "Hospice services (out of network provider)",
+    secondHeading: "Hospice services (out-of-network provider)",
     paragraphs: [
       "$95/visit",
       "$60/visit",

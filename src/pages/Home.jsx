@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroStar from '../assets/HeaderStar.png';
 import Hero from "../components/LandingPage/Hero";
 import Header from "../shared/Header";
