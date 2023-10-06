@@ -1,4 +1,12 @@
-const sampleData = [
+import Ellipse1 from "../assets/ellipses/Ellipse-1.svg"
+import Ellipse2 from "../assets/ellipses/Ellipse-2.svg"
+import Ellipse3 from "../assets/ellipses/Ellipse-3.svg"
+import Ellipse4 from "../assets/ellipses/Ellipse-4.svg"
+import Ellipse5 from "../assets/ellipses/Ellipse-5.svg"
+import Ellipse6 from "../assets/ellipses/Ellipse-6.svg"
+import Ellipse7 from "../assets/ellipses/Ellipse-7.svg"
+
+const InsuranceData = [
   {
     firstHeading:
       "Primary care visit to treat an injury or illness (in network provider)",
@@ -385,5 +393,78 @@ const sampleData = [
     ],
   },
 ];
+const UsersReview1 = [
+  {
+    name:"Jane Cooper",
+    position:"Marketing Coordinator",
+    details:"“I value simplicity and this platform made health insurance a breeze.”" ,
+    avatar: Ellipse1,
+  }
+,
+{
+  name:"Wade Warren",
+  position:"Software Developer",
+  details:"“I now understand my health insurance like never before, thanks to their clear explanations.”"  ,
+  avatar:Ellipse7,
+}
+,
 
-export default sampleData;
+{
+  name:"Jacob Jones",
+  position:"Student",
+  details:"“It's like having a personal health insurance expert by my side!”"  ,
+  avatar:Ellipse6,
+}
+,
+{
+  name:"Cameron Williamson",
+  position:"Medical Assistant",
+  details:"“Hauora Health made health insurance design-friendly!”"  ,
+  avatar:Ellipse5,
+},
+{
+  name:"Cameron Williamson",
+  position:"Medical Assistant",
+  details:"“Hauora Health made health insurance design-friendly!”"  ,
+  avatar:Ellipse5,
+}
+]
+
+const UsersReview2 = [
+  {
+    name:"Brooklyn Simmons",
+    position:"Web Designer",
+    details:"“Hauora Health made health insurance easy-to-understand! Kudos to the team”"  ,
+    avatar: Ellipse1,
+  }
+,
+{
+  name:"Leslie Alexander",
+  position:"Graphic Designer",
+  details:"“Hauora Health is my top recommendation for understanding health insurance.”"  ,
+  avatar:Ellipse2,
+}
+,
+
+{
+  name:"Jacob Jones",
+  position:"Student",
+  details:"“I needed something easy to understand. Hauora Health made health insurance less intimidating and more accessible.”"  ,
+  avatar:Ellipse3,
+}
+,
+{
+  name:"Theresa Webb",
+  position:"Web Designer",
+  details:"“Hauora Health simplifies health insurance decisions, making my life easier.”"  ,
+  avatar:Ellipse4,
+},
+{
+  name:"Theresa Webb",
+  position:"Web Designer",
+  details:"“Hauora Health simplifies health insurance decisions, making my life easier.”"  ,
+  avatar:Ellipse4,
+}
+]
+
+export default {UsersReview2 ,UsersReview1, InsuranceData };
