@@ -1,6 +1,5 @@
 import React from "react";
 import GlowingCircle from "../../assets/ChooseUs Circle.png";
-import HeadingLine from "../../assets/HeadingLine.png";
 import LanguageIcon from "../../assets/chooseUsLanguageIcon.png";
 import EyeIcon from "../../assets/chooseUsEye.png";
 import ChooseUsComponent from "../../shared/ChooseUsComponent";
