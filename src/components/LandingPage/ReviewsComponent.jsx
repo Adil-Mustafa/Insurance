@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import FeatureSlider from "../../shared/FeatureSlider";
+import WordStyled from "../../shared/WordStyled";
  
 SwiperCore.use([Navigation]);
 function UserReviewsComponent() {
@@ -53,24 +54,17 @@ function UserReviewsComponent() {
         <div className="px-4 sm:px-48">
           <div className="w-full sm:w-[500px] ">
             <h1 className="text-[#06283D] tracking-tight text-[40px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]">
-              See What Our Users{" "}
+              See What <WordStyled word="Our Users" />
+              
               <span>
                 <div className="w-full sm:flex justify-end px-10 -mb-6 hidden">
-                  <img
-                    src={HeadingLine}
-                    alt="Heading line"
-                    className="flex justify-end w-[200px] h-[14px] lg:w-[100px] xl:w-[200px] 2xl:w-[300px] -mt-3"
-                  />
+                  
                 </div>
               </span>
               Are Saying
             </h1>
             <div className="w-full flex sm:hidden justify-end px-10 -mb-6">
-              <img
-                src={HeadingLine}
-                alt="Heading line"
-                className="flex justify-end w-[220px] h-[14px] lg:w-[100px] xl:w-[200px] 2xl:w-[300px] -mt-3"
-              />
+              
             </div>
           </div>
           <div className="w-full sm:flex justify-end gap-x-5 hidden  ">
@@ -101,7 +95,7 @@ function UserReviewsComponent() {
               noSwiping={true}
             >
               {data?.UsersReview1?.map((userReview, index) => (
-                <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]'>
+                <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] py-4'>
                   <FeatureSlider userReview={userReview}/>
                 </SwiperSlide>
               ))}
@@ -119,7 +113,7 @@ function UserReviewsComponent() {
               className="w-full  flex gap-x-10 my-8 relative -left-1 "
             >
               { data?.UsersReview2?.map((userReview, index) => (
-                <SwiperSlide key={index} className="w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]">
+                <SwiperSlide key={index} className="w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px] py-4">
                  <FeatureSlider userReview={userReview} />
                 </SwiperSlide>
               ))}

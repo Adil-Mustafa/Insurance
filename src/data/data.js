@@ -421,6 +421,12 @@ const UsersReview1 = [
   position:"Medical Assistant",
   details:"“Hauora Health made health insurance design-friendly!”"  ,
   avatar:Ellipse5,
+},
+{
+  name:"Cameron Williamson",
+  position:"Medical Assistant",
+  details:"“Hauora Health made health insurance design-friendly!”"  ,
+  avatar:Ellipse5,
 }
 ]
 
@@ -447,6 +453,12 @@ const UsersReview2 = [
   avatar:Ellipse3,
 }
 ,
+{
+  name:"Theresa Webb",
+  position:"Web Designer",
+  details:"“Hauora Health simplifies health insurance decisions, making my life easier.”"  ,
+  avatar:Ellipse4,
+},
 {
   name:"Theresa Webb",
   position:"Web Designer",

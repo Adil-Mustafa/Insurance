@@ -1,6 +1,7 @@
 import React from 'react';
 import HeadingLine from "../../assets/HeadingLine.png";
 import InformedChoiseGirlBG from "../../assets/InformedChoiseGirlBG.png";
+import WordStyled from '../../shared/WordStyled';
 
 function InformedChoice() {
     return (
@@ -17,10 +18,12 @@ function InformedChoice() {
                     <div className='relative flex flex-col justify-center items-center w-full h-full'>
                         <div className='flex flex-col w-full px-0 '>
                             <div className='w-full'>
-                                <h1 className='text-[#06283D] tracking-wide text-[30px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]'>Make Informed <br /> Choices</h1>
-                                <div className='w-full'>
-                                    <img src={HeadingLine} alt="Heading line" className='w-full h-[14px] lg:w-[100px] xl:w-[200px] 2xl:w-[400px]' />
-                                </div>
+                                <h1 className='text-[#06283D] tracking-wide text-[30px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]'>
+                                    Make Informed <br /> 
+                                    <WordStyled word="Choices" />
+                                    
+                                    </h1>
+                                
                             </div>
                             <div className='w-full sm:w-[400px] text-[15px] sm:text-[18px] font-Jakarta text-[#06283D99] mt-3'>
                                 <h1>Our data and insights unlock the power to make confident and informed Health Insurance decisions.</h1>
