@@ -55,7 +55,7 @@ function ChooseUs() {
                     className=' w-full flex flex-col gap-y-14 sm:gap-y-0 sm:flex-row justify-center items-center sm:items-baseline  gap-x-0 sm:gap-x-20 px-5 sm:px-[100px] md:px-[130px] lg:px-[150px] xl:px-[180px] 2xl:px-[200px] my-20 z-50'>
                     {
                         chooseusData.map((current, index) => (
-                            <ChooseUsComponent icon={current.icon} headingOne={current.headingOne} headingTwo={current.headingTwo} detail={current.detail} />
+                            <ChooseUsComponent key={index} icon={current.icon} headingOne={current.headingOne} headingTwo={current.headingTwo} detail={current.detail} />
                         ))
                     }
                 </div>

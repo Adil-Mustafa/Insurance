@@ -50,9 +50,9 @@ const MainTable = ({ data }) => {
             )}
           </h2>
           <div className="mt-card-paragraph-section">
-            {item.paragraphs.slice(0, 3).map((para) =>
+            {item.paragraphs.slice(0, 3).map((para,i) =>
               para.includes("Coinsurance") ? (
-                <p className="mt-card-paragraph">
+                <p key={i} className="mt-card-paragraph">
                   <Tooltip
                     title="The percentage of medical costs 
                                you share with your insurance 
@@ -105,9 +105,9 @@ const MainTable = ({ data }) => {
             )}
           </h2>
           <div className="mt-card-paragraph-section_1">
-            {item.paragraphs.slice(3, 6).map((para) =>
+            {item.paragraphs.slice(3, 6).map((para,i) =>
               para.includes("Coinsurance") ? (
-                <p className="mt-card-paragraph">
+                <p key={i} className="mt-card-paragraph">
                   <Tooltip
                     title="The percentage of medical costs 
                                you share with your insurance 

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HeadingLine from "../../assets/HeadingLine.png";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import User1 from "../../assets/user1Img.png";
-import RatingImg from "../../assets/ratingImg.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Navigation } from "swiper/modules";
@@ -10,12 +8,12 @@ import { useMediaQuery } from "react-responsive";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import data from "../../data/data";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import FeatureSlider from "../../shared/FeatureSlider";
-
+ 
 SwiperCore.use([Navigation]);
 function UserReviewsComponent() {
   const [swiperOne, setSwiperOne] = useState();
@@ -29,9 +27,8 @@ function UserReviewsComponent() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
   useEffect(() => {
-    console.log("useEffect ::");
     if (isDesktopOrLaptop) {
-      console.log("isDesktopo");
+      console.log("isDesktopOrLaptop");
       setUserReviewCount(4);
     } else if (isTabletOrMobile) {
       console.log("isMobile");
@@ -40,10 +37,8 @@ function UserReviewsComponent() {
       console.log("isBigScreen");
       setUserReviewCount(5);
     }
-    console.log("userReviewsCount", userReviewsCount);
   }, [isBigScreen, isDesktopOrLaptop, isTabletOrMobile]);
   const handleNextClick = () => {
-    console.log("handleNextClick ::");
     swiperOne.slideNext();
     swiperTwo.slideNext();
   };
@@ -106,9 +101,9 @@ function UserReviewsComponent() {
               className="w-full  flex gap-x-10 my-8 relative -left-1"
               noSwiping={true}
             >
-              {Array.from({ length: 10 }).map((current, index) => (
-                <SwiperSlide className="w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]">
-                  <FeatureSlider />
+              {data?.UsersReview1?.map((userReview, index) => (
+                <SwiperSlide key={index} className="w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]">
+                  <FeatureSlider userReview={userReview}/>
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -124,9 +119,9 @@ function UserReviewsComponent() {
               navigation={true}
               className="w-full  flex gap-x-10 my-8 relative -left-1 "
             >
-              {Array.from({ length: 10 }).map((current, index) => (
-                <SwiperSlide className="w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]">
-                  <FeatureSlider />
+              { data?.UsersReview2?.map((userReview, index) => (
+                <SwiperSlide key={index} className="w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]">
+                 <FeatureSlider userReview={userReview} />
                 </SwiperSlide>
               ))}
             </Swiper>
