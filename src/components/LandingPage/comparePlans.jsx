@@ -1,6 +1,6 @@
 import React from 'react';
 import CompareBoyImage from "../../assets/ComparePlanImage.png";
-import HeadingLine from "../../assets/DarkHeadingLine.png";
+import HeadingLine from "../../assets/HeadingLine.png";
 
 function ComparePlans() {
     return (

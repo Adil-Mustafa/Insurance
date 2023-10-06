@@ -6,8 +6,8 @@ function App() {
   return (
     <main className=''>
     <Routes>
-        {/* <Route path='/' element={<Insurance />} /> */}
         <Route path='/' element={<Home />} />
+        <Route path='insurance' element={<Insurance />} />
     </Routes>
       </main>
   );

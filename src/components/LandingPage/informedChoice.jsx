@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadingLine from "../../assets/DarkHeadingLine.png";
+import HeadingLine from "../../assets/HeadingLine.png";
 import InformedChoiseGirlBG from "../../assets/InformedChoiseGirlBG.png";
 
 function InformedChoice() {

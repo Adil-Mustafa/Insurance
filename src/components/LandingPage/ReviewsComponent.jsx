@@ -91,18 +91,17 @@ function UserReviewsComponent() {
         <div className="flex flex-col">
           <div className="w-full flex gap-x-10  lg: ml-16 sm: ml:8 relative">
             <Swiper
-              spaceBetween={isTabletOrMobile ? 40 : isDesktopOrLaptop ? 70 : 40}
               slidesPerView={userReviewsCount}
               loop={true}
               rewind={true}
-              onSlideChange={() => console.log("slide change")}
+              onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => setSwiperOne(swiper)}
               navigation={true}
-              className="w-full  flex gap-x-10 my-8 relative -left-1"
+              className='w-full  flex gap-x-10 my-8 relative -left-1'
               noSwiping={true}
             >
               {data?.UsersReview1?.map((userReview, index) => (
-                <SwiperSlide key={index} className="w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]">
+                <SwiperSlide className='w-[331px] h-[243px] sm:min-w-[398px] sm:min-h-[292px]'>
                   <FeatureSlider userReview={userReview}/>
                 </SwiperSlide>
               ))}

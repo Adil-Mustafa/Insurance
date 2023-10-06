@@ -4,8 +4,9 @@ import React from "react";
 import leaf from "../../assets/leaf.svg";
 import "../../styles/MainTable.css";
 import Tooltip from "@mui/material/Tooltip";
-
+import { useMediaQuery } from "@mui/material";
 const MainTable = ({ data }) => {
+  const isSmallScreen = useMediaQuery("(max-width: 750px)");
   return (
     <div className="mt-main-container">
       <h1 className="mt-coverage-heading">Coverage Details</h1>
@@ -18,7 +19,7 @@ const MainTable = ({ data }) => {
         >
           <h2 className="mt-card-heading">
             <img src={leaf} alt="Icon" className="mt-heading-icon" />
-            {item.firstHeading.includes("in network provider") ? (
+            {item.firstHeading.includes("in network provider") && !isSmallScreen ? (
               <>
                 {item.firstHeading
                   .split("in network provider")
@@ -73,7 +74,7 @@ const MainTable = ({ data }) => {
           </div>
           <h2 className="mt-card-heading">
             <img src={leaf} alt="Icon" className="mt-heading-icon" />
-            {item.secondHeading.includes("out of network provider") ? (
+            {item.secondHeading.includes("out of network provider") && !isSmallScreen ? (
               <>
                 {item.secondHeading
                   .split("out of network provider")

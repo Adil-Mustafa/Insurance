@@ -41,13 +41,13 @@ function Header() {
             </div>
             <div className="hidden sm:block">
               <ul className="flex gap-x-10 text-[#06283D] text-[18px] font-Jakarta">
-                <li className="cursor-pointer hover:text-[#052031]">
+                <li className="cursor-pointer hover:text-[#47A5DC]">
                   Our Plans
                 </li>
-                <li className="cursor-pointer hover:text-[#052031]">
+                <li className="cursor-pointer hover:text-[#47A5DC]">
                   About us
                 </li>
-                <li className="cursor-pointer hover:text-[#052031]">
+                <li className="cursor-pointer hover:text-[#47A5DC]">
                   Contact us
                 </li>
               </ul>
@@ -68,13 +68,13 @@ function Header() {
         {menuOpen && (
           <div className="absolute left-0 w-full bg-[#ffffff] shadow-lg z-10">
             <ul className="flex flex-col justify-center items-center gap-x-10 text-[#06283D] text-[12px] font-Jakarta">
-              <li className="px-6 py-3 cursor-pointer hover:text-[#052031] ">
+              <li className="px-6 py-3 cursor-pointer hover:text-[#47A5DC] ">
                 Our Plans
               </li>
-              <li className="px-6 py-3 cursor-pointer hover:text-[#052031] ">
+              <li className="px-6 py-3 cursor-pointer hover:text-[#47A5DC] ">
                 About us
               </li>
-              <li className="px-6 py-3 cursor-pointer hover:text-[#052031] ">
+              <li className="px-6 py-3 cursor-pointer hover:text-[#47A5DC] ">
                 Contact us
               </li>
                <li className="px-6 py-3 cursor-pointer hover:text-[#052031] ">
