@@ -39,7 +39,7 @@ function ChooseUs() {
           <div className=" flex flex-col items-center">
             <div className="w-fit flex flex-col items-center">
               <h1 className="text-[#06283D] tracking-wide text-[30px] font-bold sm:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[64px]">
-                Why C<WordStyled word="hoose Us?" />
+                Why C<WordStyled id="choose_us" word="hoose Us?" />
               </h1>
               
             </div>

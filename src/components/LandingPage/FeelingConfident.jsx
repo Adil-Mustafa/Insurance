@@ -19,7 +19,7 @@ function FeelingConfident() {
           <div className="flex flex-col  w-full xl:w-[500px] text-white px-4 sm:px-0">
             <h1 className="font-bold text-[40px] sm:text-[60px] leading-tight">
               Start Feeling
-              <WordStyled word="Confident " />.
+              <WordStyled id="confident" word="Confident " />.
             </h1>
             <p className="text-[16px] font-Jakarta mt-2">
               Learn about how we got started and explore all our plans and

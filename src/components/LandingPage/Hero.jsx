@@ -22,7 +22,7 @@ function Hero() {
                 welcome to zemta <br />
                 <span className="flex flex-col my-0 sm:-my-5  gap-y-0 sm:-gap-y-3">
                   <h1>
-                    your <WordStyled word="Health Insurance" />
+                    your <WordStyled id="health_insurance" word="Health Insurance" />
                   </h1>
 
                   {/* <div className='w-full flex justify-end pr-7 sm:px-44 md:-mt-2 xl:-mt-4'><img src={HeadingLine} alt="Heading line" className='w-[150px] sm:w-[400px]' /></div> */}
