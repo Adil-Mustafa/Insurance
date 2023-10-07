@@ -54,7 +54,7 @@ function UserReviewsComponent() {
         <div className="px-4 sm:px-48">
           <div className="w-full sm:w-[500px] ">
             <h1 className="text-[#06283D] tracking-tight text-[40px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]">
-              See What <WordStyled word="Our Users" />
+              See What <WordStyled id="our_user" word="Our Users" />
               
               <span>
                 <div className="w-full sm:flex justify-end px-10 -mb-6 hidden">
