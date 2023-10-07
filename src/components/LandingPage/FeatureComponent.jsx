@@ -1,6 +1,6 @@
 import React from 'react';
 import FeatureBG from '../../assets/FeatureBG.png';
-import PlanCamparsionIcon from '../../assets/plan-icon.svg';
+import PlanCamparsionIcon from '../../assets/plan-Icon.svg';
 import JargonFreeIcon from '../../assets/jargon-icon.svg'
 import MobileRespIcon from "../../assets/mobile-resp-icon.svg"
 import ChatIcon from "../../assets/chat-icon.svg"
