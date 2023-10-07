@@ -13,9 +13,9 @@ const WordStyled = ({ word, top = -10, id }) => {
   return (
     <>
       <div className="inline-block ">
-        <span id={id} className="whitespace-nowrap">
+        <h1 id={id} className="whitespace-nowrap "  >
           {word}
-        </span>
+        </h1>
         <img
           src={HeadingLine}
           width={`${spanWidth}px`}

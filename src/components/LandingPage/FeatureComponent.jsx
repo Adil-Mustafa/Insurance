@@ -39,7 +39,7 @@ function FeatureComponent() {
                 <div className='w-full h-full flex sm:flex-row flex-col font-bold text-2xl'>
                         <div className='w-full sm:w-[40%] h-full flex justify-center   p-5 sm:p-10'>
                             <div className='sm:w-[350px] flex flex-col gap-y-5 w-full justify-center'>
-                                <div className='text-4xl text-white  font-Jakarta sm:font-bold'>
+                                <div className='text-4xl text-white  font-OutFit sm:font-bold'>
                                     <h1>Our Features Specially For You</h1>
                                 </div>
                                 <div className='text-[15px] sm:text-[17px] font-normal tracking-wide font-Jakarta text-white capitalize'>

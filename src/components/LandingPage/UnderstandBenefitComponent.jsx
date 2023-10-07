@@ -14,9 +14,8 @@ function UnderstandBenefitComponent() {
             <div className="relative flex flex-col justify-center items-center w-full h-full">
               <div className="flex flex-col w-full px-0">
                 <div className="w-full">
-                  <h1 className="text-[#06283D] tracking-wide text-[30px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]">
-                    <WordStyled id="benefits" word="Understand Benefi" />
-                    ts*
+                  <h1 className="text-[#06283D] tracking-wide text-[30px] font-bold font-OutFit sm:text-[30px] lg:text-[35px] xl:text-[64px] 2xl:text-[64px]">
+                    <WordStyled id="benefits" word="Understand Benefits*" />
                   </h1>
                 </div>
                 <div className="w-full sm:w-[400px] text-[15px] sm:text-[18px] font-Jakarta text-[#06283D99] mt-3">

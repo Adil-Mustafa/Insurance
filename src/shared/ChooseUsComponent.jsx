@@ -10,8 +10,8 @@ function ChooseUsComponent({ icon, headingOne, headingTwo, detail }) {
                     <img src={icon} alt="LanguageIcon" className='w-full h-full'/>
                 </div>
                 <div className='text-[20px] text-[#06283D] font-Jakarta font-semibold'>
-                    <h1>{ headingOne }</h1>
-                    <h1>{ headingTwo }</h1>
+                    <h1 className='font-bold font-OutFit text-[26px]' >{ headingOne }</h1>
+                    <h1 className='font-bold font-OutFit text-[26px]'>{ headingTwo }</h1>
                 </div>
                 <div className='w-full text-[#06283D99] text-[14px] font-Jakarta leading-[28px]'>
                     <p>{ detail }</p>

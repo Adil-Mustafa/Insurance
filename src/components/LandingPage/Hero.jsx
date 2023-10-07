@@ -18,8 +18,8 @@ function Hero() {
               </div>
             </div>
             <div className="w-full px-3 sm:px-0 text-[#06283D] capitalize font-Jakarta text-[30px] sm:text-[30px] md:text-[30px] lg:text-[45px] xl:text-[50px] 2xl:text-[70px]">
-              <h1 className="font-bold tracking-wide">
-                welcome to zemta <br />
+              <h1 className=" tracking-wide font-OutFit font-bold">
+                
                 <span className="flex flex-col my-0 sm:-my-5  gap-y-0 sm:-gap-y-3">
                   <h1>
                     your <WordStyled id="health_insurance" word="Health Insurance" />
@@ -32,10 +32,7 @@ function Hero() {
             </div>
             <div className="font-Jakarta text-[#06283D99] w-full px-3 sm:pr-28 my-2">
               <h1 className="text-[15px] sm:text-[20px]">
-                Es ist ein lang erwiesener Fakt, dass ein Leser vom Text
-                abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt,
-                Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die
-                normale
+              Welcome to Hauora Health, where we make Your Health Insurance simple, straightforward, and stress-free! Say goodbye to insurance jargon and confusion. Start comparing plans and take control of your coverage with confidence.
               </h1>
             </div>
             <div className=" md:my-5 2xl:my-10">

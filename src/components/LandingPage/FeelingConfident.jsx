@@ -15,9 +15,9 @@ function FeelingConfident() {
       </div>
       <div className="w-full flex flex-col sm:flex-row h-full">
         {/* left side */}
-        <div className="w-full sm:w-[50%] flex items-center justify-center h-full sm:p-8 md:p-10 lg:p-12 xl:p-16">
+        <div className="xl:w-full sm:w-[50%] flex items-center xl:ml-7 h-full sm:p-8 md:p-10 lg:p-12 xl:p-16">
           <div className="flex flex-col  w-full xl:w-[500px] text-white px-4 sm:px-0">
-            <h1 className="font-bold text-[40px] sm:text-[60px] leading-tight">
+            <h1 className="font-bold font-OutFit text-[40px] sm:text-[60px] leading-tight">
               Start Feeling
               <WordStyled id="confident" word="Confident " />.
             </h1>

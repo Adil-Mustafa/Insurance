@@ -52,8 +52,8 @@ function UserReviewsComponent() {
     <section className="w-full flex flex-col">
       <div className="flex flex-col  w-full h-full">
         <div className="px-4 sm:px-48">
-          <div className="w-full sm:w-[500px] ">
-            <h1 className="text-[#06283D] tracking-tight text-[40px] font-bold sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px]">
+          <div className="xl:w-full sm:w-[500px] ">
+            <h1 className="text-[#06283D] tracking-tight text-[40px] font-bold font-OutFit sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[60px]">
               See What <WordStyled id="our_user" word="Our Users" />
               
               <span>

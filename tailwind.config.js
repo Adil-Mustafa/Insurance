@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Jakarta: "'Plus Jakarta Sans', sans-serif"
+        Jakarta: "'Plus Jakarta Sans', sans-serif",
+        OutFit: ['Outfit', 'sans-serif'],
       }
     },
   },

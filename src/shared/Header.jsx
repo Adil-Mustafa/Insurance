@@ -30,7 +30,7 @@ function Header() {
 
   return (
     <section ref={menuRef}>
-      <header className="relative w-full h-[81px] px-5 sm:px-28 bg-[#EAF5FB] sm:bg-transparent ">
+      <header className="relative w-full h-[81px]  lg:px-28 sm:px-1 bg-[#EAF5FB] sm:bg-transparent ">
         <div className="w-full flex justify-between items-center h-full">
           <div className="flex items-center gap-x-10">
             <div className="flex items-center cursor-pointer">
