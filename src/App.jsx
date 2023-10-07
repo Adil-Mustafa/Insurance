@@ -7,7 +7,7 @@ function App() {
     <main className=''>
     <Routes>
         <Route path='/' element={<Home />} />
-        {/* <Route path='insurance' element={<Insurance />} /> */}
+        <Route path='insurance' element={<Insurance />} />
     </Routes>
       </main>
   );
