@@ -28,7 +28,7 @@ function ComparePlans() {
                 Compare and Customize Your Ideal Insurance Plans Hassle-Free.
               </h1>
             </div>
-            <div className="w-full flex sm:flex-wrap sm:gap-y-3 gap-x-10 my-5 sm:my-10">
+            <div className="w-full flex gap-x-10 my-5 sm:my-10">
               <button className="w-[221px] h-[46px] py-4 sm:py-7 flex justify-center items-center rounded-[8px] bg-[#47A5DC] text-[14px] font-Jakarta font-semibold text-white hover:bg-[#6BB7E2] duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl">
                 See Plans
               </button>

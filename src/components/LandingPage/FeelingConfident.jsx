@@ -19,13 +19,13 @@ function FeelingConfident() {
           <div className="flex flex-col  w-full xl:w-[500px] text-white px-4 sm:px-0">
             <h1 className="font-bold font-OutFit text-[40px] sm:text-[60px] leading-tight z-20">
               Start Feeling
-              <WordStyled id="confident" word="Confident " />.
+              <WordStyled id="confident" word=" Confident" />.
             </h1>
             <p className="text-[16px] font-Jakarta mt-2">
               Learn about how we got started and explore all our plans and
               insights
             </p>
-            <div className="w-full flex justify-center sm:justify-start gap-x-5 my-5">
+            <div className="w-full flex  justify-center sm:justify-start gap-x-5 my-5">
               <button className="w-[221px] h-[46px] py-4 sm:py-7 flex justify-center items-center rounded-[8px] bg-white text-black text-[14px] font-Jakarta font-semibold hover:bg-gray-100 duration-150 drop-shadow-2xl shadow-black/20 shadow-2xl">
                 Explore Plans
               </button>
@@ -36,7 +36,7 @@ function FeelingConfident() {
           </div>
         </div>
         {/* right side */}
-        <div className="w-full sm:w-[50%] flex justify-center h-full pt-0 sm:pt-14">
+        <div className="w-full md:w-[50%] flex justify-center h-full  pt-0 sm:pt-14 md:pr-2 lg:pr-12 xl:pr-16">
           <div className="h-full flex justify-center w-[570px]">
             <img
               src={ConfidentRightImage}
