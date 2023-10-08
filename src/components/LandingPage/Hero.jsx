@@ -10,7 +10,7 @@ function Hero() {
       <div className="w-full h-full absolute">
         <div className="w-[100%] h-full flex flex-col sm:flex-row  sm:px-14 md:px-16 lg:px-20px xl:px-24 2xl:px-28">
           {/* left side */}
-          <div className="w-full sm:w-[55%] h-full flex flex-col py-4  sm:py-10 justify-center">
+          <div className="w-full sm:w-[55%] h-full flex flex-col py-4  sm:py-10 md:justify-center">
             <div className=" hidden w-full flex justify-center sm:justify-start">
               <div className="bg-[#1363DF1A] flex gap-x-2 font-Jakarta font-semibold text-[#185A81] py-2 px-3 w-[350px] rounded-full">
                 <img src={Fire} alt="fire" />
