@@ -3,8 +3,10 @@ import Fire from "../../assets/fire.png";
 import HeadingLine from "../../assets/HeadingLine.png";
 import HeroRightSideImage from "../../assets/HeroRightImage.png";
 import WordStyled from "../../shared/WordStyled";
+import { useMediaQuery } from "@mui/material";
 
 function Hero() {
+  const isSmallScreen = useMediaQuery("(max-width: 1090px)");
   return (
     <section className="h-full w-full relative">
       <div className="w-full h-full absolute">
@@ -18,7 +20,7 @@ function Hero() {
               </div>
             </div>
             <div className="w-full px-3 sm:px-0 text-[#06283D] capitalize font-Jakarta text-[30px] sm:text-[30px] md:text-[30px] lg:text-[45px] xl:text-[50px] 2xl:text-[70px]">
-              <h1 className=" tracking-wide font-OutFit font-bold">
+              <h1 className="font-OutFit font-bold tracking-tighter">
                 <span className="flex flex-col my-0 sm:-my-5  gap-y-0 sm:-gap-y-3">
                   <h1>
                     your{" "}
@@ -44,7 +46,11 @@ function Hero() {
               </button>
             </div>
           </div>
-          <div className="flex items-center">
+          <div
+            className={`flex ${
+              isSmallScreen ? "items-center" : ""
+            } justify-center`}
+          >
             <img
               src={HeroRightSideImage}
               alt="Right side"
