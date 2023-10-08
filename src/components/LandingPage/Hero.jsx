@@ -18,11 +18,11 @@ function Hero() {
               </div>
             </div>
             <div className="w-full px-3 sm:px-0 text-[#06283D] capitalize font-Jakarta text-[30px] sm:text-[30px] md:text-[30px] lg:text-[45px] xl:text-[50px] 2xl:text-[70px]">
-              <h1 className=" tracking-wide font-OutFit font-bold">
+              <h1 className="font-OutFit font-bold tracking-tighter">
                 
                 <span className="flex flex-col my-0 sm:-my-5  gap-y-0 sm:-gap-y-3">
                   <h1>
-                    your <WordStyled id="health_insurance" word="Health Insurance" />
+                    your <WordStyled id="health_insurance" word="Health Insurance"   />
                   </h1>
 
                   {/* <div className='w-full flex justify-end pr-7 sm:px-44 md:-mt-2 xl:-mt-4'><img src={HeadingLine} alt="Heading line" className='w-[150px] sm:w-[400px]' /></div> */}
