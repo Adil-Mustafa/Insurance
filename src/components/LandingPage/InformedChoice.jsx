@@ -9,20 +9,22 @@ function InformedChoice() {
       {/* section one */}
       <div className="w-full flex flex-col md:flex-row justify-center">
         {/* left side */}
-        <div className="w-full h-full lg:w-[45%] py-0 md:py-10 px-0 lg:px-20">
-          <img
-            src={InformedChoiseGirlBG}
-            alt="Left side Boy image"
-            className="h-full w-full object-cover"
-          />
+        <div className="h-full lg:w-[45%] py-0 md:py-10 px-0 lg:px-20 flex items-center">
+          <div className="flex-grow h-full">
+            <img
+              src={InformedChoiseGirlBG}
+              alt="Left side Boy image"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
 
         {/* right side */}
-        <div className="w-full lg:w-[45%] py-5 lg:py-10 px-0 lg:px-20">
+        <div className="w-full md:w-[45%] py-5 lg:py-10 px-0 lg:px-20">
           <div className="relative flex flex-col justify-center items-center w-full h-full">
             <div className="flex flex-col w-full px-0 ">
               <div className="w-full">
-                <h1 className="text-[#06283D] tracking-tight md:leading-none font-OutFit font-bold text-lg  lg:text-xl xl:text-3xl">
+                <h1 className="text-[#06283D] tracking-tight md:leading-tight font-OutFit font-bold text-lg  lg:text-xl xl:text-3xl">
                   <WordStyled
                     id="informed_decision"
                     word={
