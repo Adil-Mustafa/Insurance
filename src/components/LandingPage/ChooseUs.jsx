@@ -41,7 +41,6 @@ function ChooseUs() {
               <h1 className="text-[#06283D] tracking-wide text-[30px] font-OutFit font-bold sm:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[64px]">
                 Why C<WordStyled id="choose_us" word="hoose Us?" />
               </h1>
-              
             </div>
             <div className="w-full text-center flex justify-center">
               <div className="mt-2 px-2 sm:px-0">
@@ -52,7 +51,7 @@ function ChooseUs() {
             </div>
           </div>
         </div>
-        <div className=" w-full flex flex-col gap-y-14 sm:gap-y-0 sm:flex-row justify-center items-start sm:items-baseline  gap-x-0 sm:gap-x-20 px-5 sm:px-[100px] md:px-[130px] lg:px-[150px] xl:px-[180px] 2xl:px-[200px] my-20 z-50">
+        <div className=" w-full flex flex-col flex-wrap gap-y-14  sm:gap-y-5 sm:flex-row justify-center items-start sm:items-baseline  gap-x-0 sm:gap-x-20 px-5 sm:px-[100px] md:px-[130px] lg:px-[150px] xl:px-[180px] 2xl:px-[200px] my-20 z-50">
           {chooseusData.map((current, index) => (
             <ChooseUsComponent
               key={index}
