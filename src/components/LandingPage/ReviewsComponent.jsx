@@ -60,16 +60,16 @@ function UserReviewsComponent() {
       <div className="flex flex-col  w-full h-full">
         <div className="px-4 sm:px-48">
           <div className="xl:w-full sm:w-[500px] ">
-            <h1 className="text-[#06283D] tracking-tight text-[40px] font-bold font-OutFit sm:text-[30px] lg:text-[35px] xl:text-[40px] 2xl:text-[60px]">
-              See What <WordStyled id="our_user" word="Our Users" />
+            <h1 className="text-[#06283D] tracking-tight md:leading-tight font-bold font-OutFit text-lg  lg:text-xl xl:text-3xl">
+              See W<WordStyled id="our_user" word="hat Our Users " />
               <span>
                 <div className="w-full sm:flex justify-end px-10 -mb-6 hidden"></div>
-              </span>
+              </span>{" "}
               Are Saying
             </h1>
-            <div className="w-full flex sm:hidden justify-end px-10 -mb-6"></div>
+            <div className="w-full flex md:hidden justify-end px-10 -mb-6"></div>
           </div>
-          <div className="w-full sm:flex justify-end gap-x-5 hidden  ">
+          <div className="w-full md:flex justify-end gap-x-5 hidden  ">
             <button
               className="w-[72px] h-[72px] rounded-full bg-[#1D6996] hover:bg-[#1a5e87] duration-150 flex items-center justify-center"
               onClick={handlePrevClick}
@@ -124,7 +124,7 @@ function UserReviewsComponent() {
               ))}
             </Swiper>
           </div>
-          <div className="w-full my-4 flex justify-center sm:justify-end gap-x-5 sm:hidden  ">
+          <div className="w-full my-4 flex justify-center md:justify-end gap-x-5 md:hidden  ">
             <button
               className="w-[72px] h-[72px] rounded-full bg-[#1D6996] hover:bg-[#1a5e87] duration-150 flex items-center justify-center"
               onClick={handlePrevClick}

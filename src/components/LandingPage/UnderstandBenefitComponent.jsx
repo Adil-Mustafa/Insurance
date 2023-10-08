@@ -14,7 +14,7 @@ function UnderstandBenefitComponent() {
             <div className="relative flex flex-col justify-center items-center w-full h-full">
               <div className="flex flex-col w-full px-0">
                 <div className="w-full ">
-                  <h1 className="text-[#06283D] tracking-wide text-[30px] font-bold font-OutFit md:text-[30px] lg:text-[35px] xl:text-[64px] 2xl:text-[64px]">
+                  <h1 className="text-[#06283D] tracking-wide font-bold font-OutFit text-lg  lg:text-xl xl:text-3xl ">
                     <WordStyled id="benefits" word="Understand Benefits*" />
                   </h1>
                 </div>

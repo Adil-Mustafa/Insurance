@@ -22,7 +22,7 @@ function InformedChoice() {
           <div className="relative flex flex-col justify-center items-center w-full h-full">
             <div className="flex flex-col w-full px-0 ">
               <div className="w-full">
-                <h1 className="text-[#06283D] tracking-wide text-[30px] font-OutFit font-bold md:text-[30px] lg:text-[35px] xl:text-[64px] 2xl:text-[64px]">
+                <h1 className="text-[#06283D] tracking-tight md:leading-none font-OutFit font-bold text-lg  lg:text-xl xl:text-3xl">
                   <WordStyled
                     id="informed_decision"
                     word={
