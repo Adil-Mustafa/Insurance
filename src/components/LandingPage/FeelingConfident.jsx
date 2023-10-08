@@ -9,7 +9,7 @@ function FeelingConfident() {
   return (
     <section className="w-full h-full sm:h-[501px] bg-[#47A5DC] relative">
       <div className="relative">
-        <div className="w-[100px] absolute z-50 hidden sm:block">
+        <div className="w-[100px] absolute z-10 hidden sm:block">
           <img src={GlowingCircle} alt="Circle" />
         </div>
       </div>
@@ -17,7 +17,7 @@ function FeelingConfident() {
         {/* left side */}
         <div className="xl:w-full sm:w-[50%] flex items-center xl:ml-7 h-full sm:p-8 md:p-10 lg:p-12 xl:p-16">
           <div className="flex flex-col  w-full xl:w-[500px] text-white px-4 sm:px-0">
-            <h1 className="font-bold font-OutFit text-[40px] sm:text-[60px] leading-tight">
+            <h1 className="font-bold font-OutFit text-[40px] sm:text-[60px] leading-tight z-20">
               Start Feeling
               <WordStyled id="confident" word="Confident " />.
             </h1>
